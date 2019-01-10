@@ -7,6 +7,7 @@ require('dotenv').config({
 
 const envVarsSchema = Joi.object({
   ACCESS_TOKEN: Joi.string().required(),
+  SECRET_KEY: Joi.string().required(),
 })
   .unknown()
   .required()
@@ -18,6 +19,7 @@ if (error) {
 
 const config = {
   accessToken: envVars.ACCESS_TOKEN,
+  secretKey: envVars.SECRET_KEY,
 }
 
 module.exports = config

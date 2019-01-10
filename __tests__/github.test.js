@@ -1,4 +1,5 @@
 const GitHub = require('../lib/github')
+const { decrypt } = require('../lib/crypto')
 const config = require('../config')
 
 describe('Integration with GitHub API', () => {
@@ -6,9 +7,8 @@ describe('Integration with GitHub API', () => {
 
   beforeAll(() => {
     const { accessToken } = config
-    console.log(accessToken)
     github = new GitHub({
-      accessToken,
+      accessToken: decrypt(accessToken),
       baseURL: 'https://api.github.com',
     })
   })
