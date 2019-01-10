@@ -6,6 +6,7 @@ describe('Integration with GitHub API', () => {
 
   beforeAll(() => {
     const { accessToken } = config
+    console.log(accessToken)
     github = new GitHub({
       accessToken,
       baseURL: 'https://api.github.com',
