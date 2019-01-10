@@ -1,0 +1,10 @@
+{
+  "name": "awesome-javascript",
+  "version": "1.0.0",
+  "description": "Software is a team sports",
+  "main": "index.js",
+  "repository": "https://github.com/stunstunstun/awesome-javascript",
+  "author": "stunstunstun <wjdsupj@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
