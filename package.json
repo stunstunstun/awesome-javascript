@@ -8,6 +8,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "dotenv": "^6.2.0",
+    "joi": "^14.3.1",
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {

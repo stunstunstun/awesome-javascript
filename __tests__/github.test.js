@@ -1,11 +1,13 @@
 const GitHub = require('../lib/github')
+const config = require('../config')
 
 describe('Integration with GitHub API', () => {
   let github
 
   beforeAll(() => {
+    const { accessToken } = config
     github = new GitHub({
-      accessToken: process.env.ACCESS_TOKEN,
+      accessToken,
       baseURL: 'https://api.github.com',
     })
   })
