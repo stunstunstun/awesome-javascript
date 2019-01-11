@@ -37,3 +37,9 @@ $ nvm use
 $ nvm use
 $ yarn install
 ```
+
+### Test
+
+```bash
+$ yarn test
+```
